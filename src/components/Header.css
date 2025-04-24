@@ -11,15 +11,19 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 28px 32px 18px 32px;
 }
 .logo {
   color: #b08b24;
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: bold;
-  font-size: 2.1rem;
+  font-size: 3rem;
   letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: center;
 }
 
 .nav-icon svg {
