@@ -62,10 +62,37 @@
 
 /* --- Responsividad para móviles --- */
 @media (max-width: 600px) {
+  /* ...ya existen reglas para portrait aquí... */
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .main-header, .header-content {
+    max-width: 99vw !important;
+    width: 99vw !important;
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box;
+  }
+}
+  .main-header {
+    max-width: 99vw !important;
+    width: 99vw !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto !important;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+    padding-left: 1vw !important;
+    padding-right: 1vw !important;
+  }
   .header-content {
+    max-width: 99vw !important;
+    width: 99vw !important;
+    margin: 0 auto !important;
+    padding: 16px 1vw 10px 1vw;
     flex-direction: column;
     align-items: center;
-    padding: 16px 8px 10px 8px;
     gap: 10px;
   }
   .logo {
@@ -91,4 +118,4 @@
     width: 28px !important;
     height: 28px !important;
   }
-}
+
