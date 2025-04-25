@@ -29,33 +29,70 @@
 }
 
 @media (max-width: 700px) {
-  /* Galería apilada en columna y thumbs fluidos */
-  /* Tercera fila: 10 cuadros pequeños en grid */
-  .tercera-fila {
-    display: grid !important;
-    grid-template-columns: repeat(10, 1fr) !important;
-    gap: 6px !important;
-    max-width: 99vw !important;
-    padding: 0 2vw !important;
+  /* Sección de videos igual que en escritorio: 8 videos en grid (2 filas x 4 columnas) */
+  .videos-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    max-width: 98vw;
+    padding: 0 2vw;
   }
-  .tercera-fila > div {
-    max-width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 4px !important;
-    border-radius: 8px !important;
-    height: 70px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+  .videos-section > .video-item {
+    min-width: 0;
+    min-height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 4px;
+    border-radius: 8px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
   }
-  .tercera-fila img,
-  .tercera-fila video {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    border-radius: 6px !important;
+  .videos-section > .video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #000;
+  }
+}
+
+  /* Tercera fila igual que escritorio: 10 cuadros pequeños en grid */
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+  .blog-section > .blog-post {
+    min-width: 0;
+    min-height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 4px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .blog-section > .blog-post img, .blog-section > .blog-post video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
   }
   .gallery-row {
     flex-direction: column !important;
@@ -96,7 +133,7 @@
     border-radius: 8px !important;
     background: #000;
   }
-}
+
 
 @media (max-width: 900px) and (orientation: landscape) {
   .gallery-row {
@@ -604,21 +641,72 @@
 }
 
 @media (max-width: 700px) {
-  .blog-section {
-    grid-template-columns: 1fr;
-    max-width: 98vw;
-    gap: 18px;
-    padding: 0;
-  }
-  .wide-block, .wide-block-reverse {
-    flex-direction: column;
-    grid-column: span 1;
-  }
-  .gallery-row {
-    padding: 8px 2px;
+  /* Sección de videos igual que en escritorio: 8 videos en grid (2 filas x 4 columnas) */
+  .videos-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 8px;
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+  .videos-section > .video-item {
+    min-width: 0;
+    min-height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 4px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .videos-section > .video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #000;
   }
 }
+
+  /* Tercera fila igual que escritorio: 10 cuadros pequeños en grid */
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+  .blog-section > .blog-post {
+    min-width: 0;
+    min-height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 4px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .blog-section > .blog-post img,
+  .blog-section > .blog-post video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
 
 .blog-post {
   background: #fff;
@@ -750,14 +838,76 @@ video.post-image {
 }
 
 @media (max-width: 700px) {
-  .blog-section {
-    grid-template-columns: 1fr;
+  /* Sección de videos igual que en escritorio: 8 videos en grid (2 filas x 4 columnas) */
+  .videos-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
     max-width: 98vw;
-    gap: 36px 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 2vw;
+  }
+  .videos-section > .video-item {
+    min-width: 0;
+    min-height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 4px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .videos-section > .video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #000;
   }
 }
+
+  /* Tercera fila igual que escritorio: 10 cuadros pequeños en grid */
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+  .blog-section > .blog-post {
+    min-width: 0;
+    min-height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 4px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .blog-section > .blog-post img,
+  .blog-section > .blog-post video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+
+
+
 
 @media (max-width: 1200px) {
   .blog-section {
@@ -767,14 +917,8 @@ video.post-image {
 }
 
 @media (max-width: 900px) {
-  .blog-section {
-    grid-template-columns: 1fr;
-    gap: 48px 0;
-    max-width: 98vw;
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
+
 
 .scrapbook-polaroid {
   grid-column: span 1;
@@ -790,14 +934,76 @@ video.post-image {
 }
 
 @media (max-width: 700px) {
-  .blog-section {
-    grid-template-columns: 1fr;
+  /* Sección de videos igual que en escritorio: 8 videos en grid (2 filas x 4 columnas) */
+  .videos-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
     max-width: 98vw;
-    gap: 36px 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 2vw;
+  }
+  .videos-section > .video-item {
+    min-width: 0;
+    min-height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 4px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .videos-section > .video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #000;
   }
 }
+
+  /* Tercera fila igual que escritorio: 10 cuadros pequeños en grid */
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+  .blog-section > .blog-post {
+    min-width: 0;
+    min-height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 4px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .blog-section > .blog-post img,
+  .blog-section > .blog-post video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+
+
+
 
   .polaroid-frame {
     width: 98vw;
