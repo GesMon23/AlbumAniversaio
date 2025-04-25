@@ -258,7 +258,7 @@ const textosVideos = [
             }
             if (galeria.length > 0) {
               bloques.push(
-                <div key={`galeria-row-img-${imgIdx}`} style={{ gridColumn: '1 / -1', display: 'flex', justifyContent: 'center', gap: '8px', margin: '0' }}>
+                <div key={`galeria-row-img-${imgIdx}`} className="tercera-fila" style={{ gridColumn: '1 / -1', display: 'flex', justifyContent: 'center', gap: '8px', margin: '0' }}>
                   {galeria}
                 </div>
               );

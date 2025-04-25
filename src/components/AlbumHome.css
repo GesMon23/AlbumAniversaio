@@ -30,6 +30,33 @@
 
 @media (max-width: 700px) {
   /* Galería apilada en columna y thumbs fluidos */
+  /* Tercera fila: 10 cuadros pequeños en grid */
+  .tercera-fila {
+    display: grid !important;
+    grid-template-columns: repeat(10, 1fr) !important;
+    gap: 6px !important;
+    max-width: 99vw !important;
+    padding: 0 2vw !important;
+  }
+  .tercera-fila > div {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 4px !important;
+    border-radius: 8px !important;
+    height: 70px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box;
+  }
+  .tercera-fila img,
+  .tercera-fila video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 6px !important;
+  }
   .gallery-row {
     flex-direction: column !important;
     gap: 12px !important;
