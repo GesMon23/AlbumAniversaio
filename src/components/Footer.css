@@ -3,43 +3,7 @@
   border-top: 1px solid #eee;
   padding: 16px 0 8px 0;
   margin-top: 48px;
-  width: 100%;
-  box-sizing: border-box;
 }
-
-@media (max-width: 600px) {
-  /* ...ya existen reglas para portrait aquí... */
-}
-
-@media (max-width: 900px) and (orientation: landscape) {
-  .main-footer, .footer-content {
-    max-width: 99vw !important;
-    width: 99vw !important;
-    margin: 0 auto !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    box-sizing: border-box;
-  }
-}
-  .main-footer {
-    max-width: 99vw !important;
-    width: 99vw !important;
-    left: 0;
-    right: 0;
-    margin: 0 auto !important;
-    border-radius: 0 !important;
-    box-sizing: border-box;
-    padding-left: 1vw !important;
-    padding-right: 1vw !important;
-  }
-  .footer-content {
-    max-width: 100% !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-    padding-left: 1vw !important;
-    padding-right: 1vw !important;
-  }
-
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
