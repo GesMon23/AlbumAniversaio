@@ -1,6 +1,5 @@
 import React from 'react';
 import './AlbumHome.css';
-import './AlbumHome.mobile.rows.css';
 import BlogPost from './BlogPost';
 import WideBlock from './WideBlock';
 import GalleryRow from './GalleryRow';
